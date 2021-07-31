@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>模拟聊天界面</title>
+    <style type="text/css">
+    #demo{
+        background-color:#DCDCDC;
+    }
+   div{
+        width: 360px;
+        /* height: 30px; */
+        border-radius: 5px;
+        font-size: 12px;
+        padding:6px 8px 6px 8px;
+    }
+    #div1{
+        float:left;
+        background-color:#7B68EE;
+        color:white;
+    }
+    #div2{
+        float:right;
+        background-color:#E0E0E0;
+        color:black;
+    }
+    </style>
+</head>
+
+<body topmargin="0" bgcolor="black">    
+        <table  border="0" width="1280" height="800" align="center" cellpadding="0" cellspacing="0">
+            <tr>
+                <!-- 菜单栏 -->
+                <td width="160" valign="top" bgcolor="#282b3e">
+                    <table min-width="160"  height="35" border="0" cellpadding="0" cellspacing="0" align="center">
+                        <tr>
+                            <td height="10"></td>
+                        </tr>
+                        <tr>
+                            <td align="center" style=font-family:YouYuano;font-size:14px;color:white><b>LOGO</b>示例</td> 
+                        </tr>
+                    </table>       
+                    <hr />
+                    <table min-width="160" height="40" border="0" cellpadding="8" cellspacing="0">
+                        <tr>
+                            <td align="left"><img src="images/头像/1.jpg" alt="头像" style="float:left" width="25" height="25"/></td> 
+                            <td>
+                                <table height="26">
+                                    <tr>
+                                        <td align="left" style="font-size: 13px;color:white">Claire</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" style="font-size: 6px;color:rgb(199, 196, 196)">技术总监</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                    <hr/>
+                    <table min-width="160" height="200" border="0" cellpadding="7" cellspacing="0" >
+                        <tr>
+                            <td align="left" height="30" style="font-size: 6px;color:rgb(199, 196, 196) ">菜单</td>
+                        </tr>
+                        <tr>
+                            <td align="left" height="20"> <img src="images/仪表盘.png"  width="12" height="12"/> </td> 
+                            <td style="font-size: 11px;color:white ; vertical-align:middle"> 仪表盘</td>
+                        </tr>
+                        <tr>
+                            <td align="left" height="20"> <img src="images/用户列表.png" width="12" height="12"/> </td> 
+                            <td style="font-size: 11px;color:white ; vertical-align:middle" > 用户列表 </td>
+                        </tr>
+                        <tr>
+                            <td align="left" height="20"> <img src="images/文件.png" width="12" height="12"/> </td> 
+                            <td style="font-size: 11px;color:white ; vertical-align:middle"> 文件 </td>
+                        </tr>
+                        <tr>
+                            <td align="left" bgcolor="#7B68EE" height="20"><img src="images/聊天.png" width="12" height="12"/></td> 
+                            <td bgcolor="#7B68EE" width="120" style="font-size: 11px;color:white ; vertical-align:middle"> 聊天 </td>
+                        </tr>
+                        <tr>
+                            <td align="left" height="20"><img src="images/项目.png" width="12" height="12" /></td> 
+                            <td style="font-size: 11px;color:white"> 项目 </td>
+                        </tr>
+                        <tr>
+                            <td align="left" height="20"><img src="images/日程表.png"  width="12" height="12"/></td> 
+                            <td style="font-size: 11px;color:white"> 日程表 </td>
+                        </tr>
+                        <tr>
+                            <td align="left" height="20"><img src="images/支付方式.png"width="12" height="12"/></td> 
+                            <td style="font-size: 11px;color:white"> 支付方式 </td>
+                        </tr>
+                        <tr>
+                            <td align="left" height="30" style="font-size: 6px;color:rgb(199, 196, 196) ">帮助</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td align="left" height="20"> <img src="images/需要帮助.png" width="12" height="12"/> </td> 
+                            <td style="font-size: 11px;color:white ; vertical-align:middle"> 需要帮助？</td>
+                        </tr>
+                        <tr>
+                            <td align="left" height="20"> <img src="images/联系我们.png"width="12" height="12"/> </td> 
+                            <td style="font-size: 11px;color:white ; vertical-align:middle" > 联系我们 </td>
+                        </tr>
+                        <tr>
+                            <td align="left" height="30" style="font-size: 8px;color:rgb(199, 196, 196) ">设置</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td align="left" height="20"> <img src="images/账号设置.png"width="12" height="12" /> </td> 
+                            <td style="font-size: 13px;color:white ; vertical-align:middle"> 账号设置 </td>
+                        </tr>
+                        <tr>
+                            <td align="left" height="20"> <img src="images/深色模式.png"width="12" height="12"/> </td> 
+                            <td style="font-size: 11px;color:white ; vertical-align:middle" > 深色模式 </td>
+                        </tr>
+                        <tr>
+                            <td align="left" height="20"> <img src="images/退出.png" width="12" height="12"/> </td> 
+                            <td style="font-size: 11px;color:white ; vertical-align:middle"> 退出 </td>
+                        </tr>
+                    </table>
+                    <br />
+                    <hr/>
+     
+                </td>
+                <td width="850" valign="top">
+                    <table  width="850" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td colspan="2" bgcolor="#DCDCDC"><input type="text" style="height:40px;width:750px" id="demo" placeholder="请输入关键字"></td>
+                        </tr>
+                        <tr>
+                            <td width:150px height="25" bgcolor="#DCDCDC">
+                                <table  border="0" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td align="left" style="font-size: 13px">用户列表&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                        <td align="center" bgcolor="#E6E6FA" width="80" style="font-size: 8px;color:#7B68EE ">新消息</td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td>
+                                <table border="0" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td width="540" style="font-size: 13px" bgcolor="white">新团队成员</td>
+                                        <td><img src="images/peiyangfangan_03.png" style="float: right"/></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <!--用户列表-->
+                            <td  width="300" height="800" valign="top" bgcolor="#DCDCDC">
+                                <table border="0" cellpadding="6" cellspacing="0">     
+                                    <tr>
+                                        <td align="left" height="60"><img src="images/头像/2.jpg" alt="头像" style="float:left" width="40" height="40"/></td>
+                                        <td>
+                                            <table>
+                                                <tr>
+                                                    <td align="left" style="font-size: 15px">Emily</td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left" style="font-size: 8px;color:#696969">请多指教...</td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" height="60" bgcolor="#ecf5fa"><img src="images/头像/3.jpg" alt="头像" style="float:left" width="40" height="40"/></td>
+                                        <td bgcolor="#ecf5fa" width="145">
+                                            <table>
+                                                <tr>
+                                                    <td align="left" style="font-size: 15px">Jenny</td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left" style="font-size: 8px;color:#696969">这是一个优秀的团队...</td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" height="60"><img src="images/头像/4.jpg" alt="头像" style="float:left" width="40" height="40"/></td>
+                                        <td>
+                                            <table>
+                                                <tr>
+                                                    <td align="left" style="font-size: 15px">Linda</td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left" style="font-size: 8px;color:#696969">您好，最近过得怎么样...</td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" height="60"><img src="images/头像/5.jpg" alt="头像" style="float:left" width="40" height="40"/></td>
+                                        <td>
+                                            <table>
+                                                <tr>
+                                                    <td align="left" style="font-size: 15px">Nancy</td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left" style="font-size: 8px;color:#696969">Claire，别来无恙！</td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" height="60"><img src="images/头像/6.jpg" alt="头像" style="float:left" width="40" height="40"/></td>
+                                        <td>
+                                            <table>
+                                                <tr>
+                                                    <td align="left" style="font-size: 15px">Ava</td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left" style="font-size: 8px;color:#696969">恭喜呀...</td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" height="60"><img src="images/头像/7.jpg" alt="头像" style="float:left" width="40" height="40"/></td>
+                                        <td>
+                                            <table>
+                                                <tr>
+                                                    <td align="left" style="font-size: 15px">Olivia</td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left" style="font-size: 8px;color:#696969">我很高兴认识你...</td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" height="60"><img src="images/头像/8.jpg" alt="头像" style="float:left" width="40" height="40"/></td>
+                                        <td>
+                                            <table>
+                                                <tr>
+                                                    <td align="left" style="font-size: 15px">Yoyo</td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left" style="font-size: 8px;color:#696969">很久以来我一直想见你...</td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" height="60"><img src="images/头像/9.jpg" alt="头像" style="float:left" width="40" height="40"/></td>
+                                        <td>
+                                            <table>
+                                                <tr>
+                                                    <td align="left" style="font-size: 15px">Vicky</td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left" style="font-size: 8px;color:#696969">很荣幸能加入...</td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <!--聊天界面-->
+                            <td  bgcolor="	#F5F5F5" min-width="400">
+                                <table height="800" width="500" valign="top"  cellpadding="0" cellspacing="0">     
+                                    <tr>
+                                        <td height="400" width="100%" valign="top" >
+                                            <table>
+                                                <tr>
+                                                    <td height="10"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><img src="images/头像/4.jpg" alt="头像"  width="25" height="25"/></td>
+                                                    <td align="left" style="font-size: 13px;color: #4e4e4e">Linda</td>
+                                                </tr>
+                                            </table>
+                                            <table>
+                                                <tr>
+                                                    <td colspan="2" height=45px width=750px>
+                                                        <div id="div1">
+                                                            嗨！Claire！我们真的非常欢迎您来加入我们的团队
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td height="15"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2" height=45px width=750px>
+                                                        <div id="div2">
+                                                           谢谢您，我很高兴加入这个出色的设计团队！非常感谢能有机会开发一些会影响人民生活的产品。我等不及要开始了！
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <table>
+                                                            <tr>
+                                                                <td><img src="images/头像/5.jpg" alt="头像"  width="25" height="25"/></td>
+                                                                <td align="left" style="font-size: 13px;color: #4e4e4e">Nancy</td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2" height=45px width=750px>
+                                                        <div id="div1">
+                                                            我们很高兴有您，我们喜欢您在面试中向我们展示的工作，并且您非常适合我们团队和公司中的我们很高兴有您每个人。我们很高兴有您，如果您有任何疑问，请随时询问，团队中的每个人都愿意为您提供帮助。
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td height="5"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2" height=45px width=750px>
+                                                        <div id="div1">
+                                                            我们很高兴有您，我们喜欢您在面试中向我们展示的工作，并且您非常适合我们团队和公司中的我们很高兴有您每个人。
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td height="15"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2" height=45px width=750px>
+                                                        <div id="div2">
+                                                            谢谢您。祝您吉祥如意、笑口常开；也预祝我们在新的一年中，合作愉快，万事如意！
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <table>
+                                                            <tr>
+                                                                <td><img src="images/头像/7.jpg" alt="头像"  width="25" height="25"/></td>
+                                                                <td align="left" style="font-size: 13px;color: #4e4e4e">Olivia</td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2" height=45px width=750px>
+                                                        <div id="div1">
+                                                            我们很高兴有您，如果您有任何疑问，请随时询问，团队中的每个人都愿意为您提供帮助。
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <table>
+                                                            <tr>
+                                                                <td><img src="images/头像/8.jpg" alt="头像"  width="25" height="25"/></td>
+                                                                <td align="left" style="font-size: 13px;color: #4e4e4e">Yoyo</td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2" height=45px width=750px>
+                                                        <div id="div1">
+                                                            嗨！Claire！我们真的非常欢迎您来加入我们的团队
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td height="15"></td>
+                                                </tr>
+                                                <table>
+                                                    <tr>
+                                                        <td>
+                                                            <form>
+                                                                <textarea cols="85" rows="5">在这里输入内容...</textarea>
+                                                            </form>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    
+</body>
+
+</html>
