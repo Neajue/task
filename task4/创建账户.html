@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>创建账户，判断是否合法</title>
+        <style>
+            .whole{
+                width: 170px;
+                margin: 0 auto;
+            }
+
+            div{
+                padding-bottom: 5px;
+            }
+
+            .header{
+                font-size: 17px;
+                font-weight: 600px;
+            }
+
+            .massage{
+                font-size: 14px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="whole">
+            <p style="font-size: 20px; font-weight: 400; text-align: center;">创建账户</p>
+            <!-- 用户名 -->
+            <div> 
+                <p class="header">用户名</p>
+                <input type="text" style="color: #999;" value="请输入用户名" class="user">
+                <p class="massage">&nbsp;</p>
+            </div>
+            <!-- 密码 -->
+            <div> 
+                <p class="header">密码</p>
+                <input type="text" style="color: #999;" value="请输入密码" class="code">
+                <p class="massage">&nbsp;</p>
+            </div>
+            <!-- 确认密码 -->
+            <div> 
+                <p class="header">确认密码</p>
+                <input type="text" style="color: #999;" value="请再次输入密码" class="confirm">
+                <p class="massage">&nbsp;</p>
+            </div>
+            <!-- 手机号码 -->
+            <div> 
+                <p class="header">手机号码</p>
+                <input type="text" style="color: #999;" value="请输入手机号码" class="number">
+                <p class="massage">&nbsp;</p>
+            </div>
+            <button style=" display: block; margin: 0 auto;">提交</button>
+        </div>
+        <script type="text/javascript" src="index.js"></script>
+    </body>
+</html>
