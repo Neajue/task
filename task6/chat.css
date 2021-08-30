@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    width: 440px;
+    height: 680px;
+    border: 2px solid #b2b9b4;
+}
+.name{
+    width: 440px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    background-color: #D1725D;
+    color: #F2F2F2;
+    font-size: 25px;
+    font-family: STKaiti;
+    font-weight: 700;
+}
+.word{
+    width: 420px;
+    height: 550px;
+    padding: 10px 10px 0px 10px;
+    background-color: #fdf9ee;
+    overflow-x: hidden;
+    overflow-y:auto;
+}
+.Input{
+    width: 440px;
+    height: 70px;
+    background-color: #ececea;
+}
+.textbox{
+    width: 300px;
+    height: 38px;
+    margin: 12px 15px 0px 15px;
+    overflow-y: scroll;
+    outline-style: none;
+    border: 1px solid #DCDCDC;
+    border-radius: 15px;
+    padding: 2px 10px 2px 10px;
+    text-align: left;
+    font-size: 17px;
+    color: #999;
+    background: #FFFFF8;
+}
+.btn{
+    width: 65px;
+    height: 43px;
+    background-color:#94BBBB;
+    color: white;
+    border: 0px;
+}
+.user,.robot{
+    width: 430px;
+    padding-bottom: 10px;
+}
+.user{
+    float:right;
+    text-align: right;
+}
+.robot{
+    float: left;
+}
+img{
+    width: 35px;
+    height: 35px;
+    vertical-align: text-top;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.robot_text,.user_text{
+    max-width: 300px;
+    width:auto; 
+    display:inline-block !important; 
+    display:inline;
+    height: fit-content;
+    vertical-align: text-top;
+    padding: 8px;
+    border-radius: 10px ;
+    font-size: 15px;
+}
+.robot_text{
+    background-color: #DFD5B1;
+}
+.user_text{
+    background-color: #DAB4A7;
+}
